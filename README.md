@@ -1,5 +1,8 @@
 # Upliance.ai Assignment Project
 
+### Visit Here for Deployed App -
+https://uplianceai-project-app.streamlit.app/
+
 ## Project Overview
 This project focuses on analyzing datasets related to user behavior, cooking preferences, and order trends. The objective was to uncover insights about user engagement, popular dishes, demographic influences, and revenue trends while providing actionable recommendations for business improvement.
 
