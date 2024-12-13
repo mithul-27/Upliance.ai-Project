@@ -10,18 +10,26 @@ from PIL import Image
 st.set_page_config(page_title='Upliance.ai',initial_sidebar_state='expanded',
                         layout='wide')
 
-st.markdown("""
-    <style>
-        .main {
-            background-color: #f8f2dc;
-        }
-        h1 {
-            color: #3B1F8D; 
-            text-align: center; 
-        }
-    </style>
-""", unsafe_allow_html=True)
-st.title("Upliance.ai Assignment")
+custom_css = """
+<style>
+    /* Set page background color */
+    .main {
+        background-color: #f8f2dc;
+    }
+
+    /* Style the title */
+    .title-text {
+        color: #3B1F8D;
+        text-align: center;
+        font-size: 45px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+</style>
+"""
+
+st.markdown(custom_css, unsafe_allow_html=True)
+st.markdown('<h1 class="title-text">Upliance.ai Project</h1>', unsafe_allow_html=True)
 
 df= pd.read_excel("cleaned_excel.xlsx")
 user_details = pd.read_excel("Assignment.xlsx", sheet_name=0)
